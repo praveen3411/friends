@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="don">
+        <h2>Sign-up-page</h2>
+        <form id="form">
+            <input type="text" id="don1" placeholder="Name">
+            <input type="email" id="don2" placeholder="E-Mail">
+            <input type="password" id="don3" placeholder="Password">
+            <input type="submit" id="don4">
+        </form>
+    </div>
+</body>
+</html>
+
+<script>
+    document.querySelector("form").addEventListener("submit",myfunction);
+    var array1=JSON.parse(localStorage.getItem("userdata"))||{};
+    function myfunction(){
+        event.preventDefault();
+        sign={
+            uname:form.don1.value,
+            uemail:form.don2.value,
+            upassword:form.don3.value
+        };
+        localStorage.setItem("userdata",JSON.stringify(sign));
+        window.location.href="login.html";
+        form.reset();
+
+    }
+    </script>
