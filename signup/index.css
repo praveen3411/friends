@@ -1,0 +1,89 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+#one{
+    display: flex;
+    justify-content: space-around;
+    background-color: aqua;
+    padding: 10px;
+    color: black;
+}
+#two{
+    display: flex;
+    width: 10%;
+}
+#three{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+#four{
+    display: flex;
+    width: 40%;
+    justify-content: space-around;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#don{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+input{
+   padding: 10px;
+   margin: 10px;
+   text-align: center;
+}
+#five{
+    background-color: bisque;
+    padding: 10px;
+}
+ #dom{
+     padding: 10px;
+     width: 50%;
+     text-align: center;
+ }
+ select{
+     transform: translateX(320px);
+ }
+ option{
+     background-color: aqua;
+     padding:10px;
+ }
+ #container{
+     display:grid;
+     grid-template-columns: repeat(4,1fr);
+     grid-template-rows: repeat(200px,auto);
+     grid-gap: 20px;
+ }
+#container>div{
+    box-shadow: 2px 2px 3px rgb(152, 152, 152);
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+img{
+    padding-left: 45px;
+}
+p{
+    text-align: center;
+}
+button{
+    transform: translateX(130px);
+}
+#container>div>img+h3{
+    text-align: center;
+}
+#container>div>img+h3+p+P{
+    text-align: center;
+    text-decoration:line-through;
+}
